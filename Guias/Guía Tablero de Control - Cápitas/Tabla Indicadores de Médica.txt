@@ -1,0 +1,9 @@
+- Del excel con los Codigos y valores de cada provincia, reemplazar los valores por los del mes correspondiente.
+
+- Cambiar el nombre del archivo a "cargatablero" y conectarse por remoto al servidor 192.6.0.85.
+
+- Dirigirse al acceso directo "Archivos shortcut" y pegar el excel a la carpeta "Pendientes".
+
+- Chequear que se haya pasado a la carpeta importados por la fecha.
+
+- Correr el script del exec que se encuentra en el architorio (mismo que se encuentra en este directorio como ejemplo) desde SQL SERVER (modificando el periodo por el adecuado). 
