@@ -1,0 +1,37 @@
+Te paso las consulta para armar la tabla dinámica para técnica todos los meses (aprox día 15).
+Podes armar la de agosto para practicar.
+Acordate que las consultas se corren sobre el sql server, sobre la base plan_nacer.
+La consulta que te dá la lista de periodos es la siguiente:
+ 
+SELECT Periodo, dbo.uf_busca_id_proceso_desde(Periodo) as desde, dbo.uf_busca_id_proceso_hasta(Periodo) as hasta
+  FROM [Plan_Nacer].[dbo].[SMIProcesoAfiliados]
+  group by periodo
+  order by periodo;
+ 
+y las 2 que calculan los beneficiarios:
+ 
+total
+ 
+SELECT CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo, count(*) as cantidad
+                FROM PLAN_NACER.dbo.SMIAfiliadosAux a
+                INNER JOIN siisa.dbo.provincias p ON a.CodigoProvinciaAltaDatos = p.codigo_sumar
+                LEFT JOIN siisa.dbo.departamentos d ON p.nombre + afidomdepartamento =  d.PROVINCIA + d.nombre
+                WHERE Id_ProcesoIngresoAfiliados BETWEEN 1969 AND 1992 AND Activo = 'S'
+                group by CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo
+                order by CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo
+ 
+ceb
+ 
+SELECT CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo, count(*) as cantidad
+                FROM PLAN_NACER.dbo.SMIAfiliadosAux a
+                INNER JOIN siisa.dbo.provincias p ON a.CodigoProvinciaAltaDatos = p.codigo_sumar
+                LEFT JOIN siisa.dbo.departamentos d ON p.nombre + afidomdepartamento =  d.PROVINCIA + d.nombre
+                WHERE Id_ProcesoIngresoAfiliados BETWEEN 1969 AND 1992 AND Activo = 'S' and CEB='S'
+                group by CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo
+                order by CodigoProvinciaAltaDatos, d.nombre, GrupoPoblacional, EmbarazoActual, afiSexo
+ 
+no te olvides de cambiar los números del id_ProcesoIngresoAfiliados desde y hasta.
+ 
+Cuando armás la tabla dinámica, en columnas va grupopob y y ambact
+En filas, va codpciaaltadatos y nombre, y en valores va cantidad.
+Antes de enviarla, cotejá los totales con el informe de capitas.

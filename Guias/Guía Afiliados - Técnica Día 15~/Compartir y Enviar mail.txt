@@ -1,0 +1,10 @@
+
+1- Crear un .rar de los archivos
+2- Agregar a Disco compartido(\\192.6.0.54)/PUBLICO/text tecnica/afi-<año>-<mes>/<archivo.rar>
+3- Enviar un mail detallando lo enviado. 
+	Detalle:
+4- Mails a enviar de Técnica:
+-
+-
+-
+-

@@ -1,0 +1,18 @@
+1- Agregar a Disco compartido(\\192.6.0.54)/PUBLICO/Beneficiarios/Benef_y_embaraz_por_depto_<mes>_año
+2- Enviar mail con asunto -> Beneficiarios y Embarazadas por departamento.
+
+Contexto:
+
+Estimados.
+ 
+Les paso a enviar el Excel con los Beneficiarios y Emabarazadas por departamento del mes de <mes> del 2014.
+
+Saludos cordiales.
+
+Destinatarios:
+-rafaeltes@hotmail.com
+-mf_conte@hotmail.com
+-analiagonzalez22@hotmail.com
+CC: Javier E. Minsky ()
+-
+ 

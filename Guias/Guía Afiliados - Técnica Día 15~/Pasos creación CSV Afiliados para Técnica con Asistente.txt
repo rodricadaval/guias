@@ -1,0 +1,24 @@
+Pasos para Armar el csv desde El Asistente de Importación y Exportación. (Afiliados para Técnica)
+
+En el asistente:
+
+A)
+1- Origen -> Native Client
+2- Nombre del Servidor -> PNHQDB002\SUMAR
+3- Usuario -> sa, Password -> PN2012$
+4- DB -> Plan Nacer
+
+B)
+1- Destino -> Destino de archivo plano
+2- Examinar /<Carpeta Temporal Creada>/AFI<dia>_<mes>_14_APL1.csv  ó  /APL2.csv  /BsAs.csv
+3- Dar el Tick en Nombres de Columnas
+
+4)
+1- Escribrir consulta (.)
+2- Código
+
+5) Delimitador de columnas -> Tabulador {t}
+
+6)Finalizar
+
+7)Finalizar

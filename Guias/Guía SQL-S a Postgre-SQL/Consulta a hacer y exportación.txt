@@ -1,0 +1,5 @@
+1- Hacer consulta en SQL-Server y exportar datos a un .txt.
+	Consulta: (Tener en cuenta el id del Proceso acorde al período)
+	
+2- Mover carpeta a /<Lugar a consultar>/
+3- Ejecutar programa (desde pgadmin?) que se encarga de agregar a la base de datos Postgres.

@@ -1,0 +1,22 @@
+/index-php
+- Ventana de ingreso de Usuario y Contraseña con botón INGRESAR.
+
+
+/dar-de-alta-usuario.php
+- Formulario con los campos de la Tabla USUARIO
+
+USUARIO
+-Nombre y Apellido,E-Mail,Usuario,Contraseña,Area.
+-Trigger de confirmación/validación por mail /OPCIONAL
+-Asignación de Permisos y Nombre de Permiso (automático según Area). 
+
+
+/principal/administrador.php
+Modelo de diseño ppal con agregado de botón ALTA USUARIO(hacerlo en el link Usuarios), REALIZAR PEDIDO (con Usuario a escribir).
+
+/principal/invitado.php
+Modelo ppal sin botones de agregado. Con una lista actual de Stock y links para ver las otras tablas.
+
+/principal/nivel-intermedio.php
+Modelo ppal 
+La web va a estar compuesta por una tabla vertical izquierda con los links a las bases de datos 
