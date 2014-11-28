@@ -1,0 +1,44 @@
+APL1
+SELECT
+      [ClaveBeneficiario]
+      ,[afiTipoDoc]
+      ,[afiClaseDoc]
+      ,[afiDNI]
+      ,[afiSexo]
+      ,[afiFechaNac]
+      ,[afiDeclaraIndigena]
+      ,afiId_Tribu
+      ,[maTipoDocumento]
+      ,[maNroDocumento]
+      ,[FechaInscripcion]
+      ,[FechaDiagnosticoEmbarazo]
+      ,[SemanasEmbarazo]
+      ,[FechaProbableParto]
+      ,[FechaEfectivaParto]
+      ,[afiDomMunicipio]
+      ,[afiDomDepartamento]
+      ,[afiDomLocalidad]
+      ,[afiDomCP]
+      ,[LugarAtencionHabitual]
+      ,[CUIEEfectorAsignado]
+      ,[CUIELugarAtencionHabitual]
+      ,[FUM]
+      ,CodigoProvinciaAltaDatos
+      ,EmbarazoActual
+      ,CEB
+      ,CUIE
+      ,FechaUltimaPrestacion
+      ,CodigoPrestacion
+      ,DevengaCapita
+      ,DevengaCantidadCapita
+      ,GrupoPoblacional
+  FROM Plan_Nacer.dbo.SMIAfiliadosAux
+  WHERE Activo='S' and Id_ProcesoIngresoAfiliados BETWEEN 2301 and 2324 and
+  CodigoProvinciaAltaDatos IN ('03','05','07','7','10','14','15','16','18','20');
+
+
+APL2
+ ('01','04','06','08','09','11','12','13','17','19','21','22','23','24');
+Bs As
+('02');
+

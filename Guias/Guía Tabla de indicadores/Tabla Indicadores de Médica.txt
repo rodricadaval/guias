@@ -6,4 +6,10 @@
 
 - Chequear que se haya pasado a la carpeta importados por la fecha.
 
+Entrar a URL http://192.6.0.85/G-One/Pages/Login/frmLogin.aspx
+
 - Correr el script del exec que se encuentra en el architorio (mismo que se encuentra en este directorio como ejemplo) desde SQL SERVER (modificando el periodo por el adecuado). 
+
+
+
+arch de texto, 24 lineas
